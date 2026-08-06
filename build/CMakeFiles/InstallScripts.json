@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/vboxuser/luca/cppcode/test/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

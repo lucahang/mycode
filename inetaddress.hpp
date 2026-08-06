@@ -59,8 +59,8 @@ public:
     // 设置 IP 和端口
     void setIp(const std::string& ip){
         if (inet_pton(AF_INET, ip.c_str(), &addr_.sin_addr) <= 0) {
-        addr_.sin_addr.s_addr = htonl(INADDR_ANY);
-    }
+            addr_.sin_addr.s_addr = htonl(INADDR_ANY);
+        }
     }
     void setPort(uint16_t port){
         addr_.sin_port=htons(port);
