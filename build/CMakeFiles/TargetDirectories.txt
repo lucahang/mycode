@@ -1,3 +1,0 @@
-/home/vboxuser/luca/cppcode/test/build/CMakeFiles/exe.dir
-/home/vboxuser/luca/cppcode/test/build/CMakeFiles/edit_cache.dir
-/home/vboxuser/luca/cppcode/test/build/CMakeFiles/rebuild_cache.dir

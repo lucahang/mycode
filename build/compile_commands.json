@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/vboxuser/luca/cppcode/test/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/exe.dir/test.cpp.o -c /home/vboxuser/luca/cppcode/test/test.cpp",
-  "file": "/home/vboxuser/luca/cppcode/test/test.cpp",
-  "output": "CMakeFiles/exe.dir/test.cpp.o"
-}
-]
