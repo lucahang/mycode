@@ -109,3 +109,10 @@ private:
 #define LOG_WARN(msg)  { std::ostringstream _ss; _ss << msg; Logger::getInstance().log(LogLevel::WARNING, _ss.str(), __FILE__, __LINE__); }
 #define LOG_ERROR(msg) { std::ostringstream _ss; _ss << msg; Logger::getInstance().log(LogLevel::LOG_ERROR, _ss.str(), __FILE__, __LINE__); }
 #define LOG_FATAL(msg) { std::ostringstream _ss; _ss << msg; Logger::getInstance().log(LogLevel::FATAL, _ss.str(), __FILE__, __LINE__); }
+
+int main(){
+    Logger::getInstance().setLogLevel(LogLevel::DEBUG);
+    Logger::getInstance().setLogFile("app.log");
+    LOG_DEBUG("asdfadf");
+    return 0;
+}
