@@ -16,6 +16,12 @@ private:
 
 public:
     Stack():head(nullptr),size_(0){}
+    
+    Stack(Stack&& other) noexcept
+        : head(other.head), size_(other.size_) {
+        other.head = nullptr;
+        other.size_ = 0;
+    }
 
     Stack(const Stack<T>& other):head(nullptr),size_(other.size_){
         if(other.head == nullptr) return;
@@ -79,7 +85,17 @@ public:
         }
         std::cout<<std::endl;
     }
-
+    
+    Stack& operator=(Stack&& other) noexcept {
+        if (this != &other) {
+            clear();
+            head = other.head;
+            size_ = other.size_;
+            other.head = nullptr;
+            other.size_ = 0;
+        }
+        return *this;
+    }
     Stack<T>& operator=(const Stack<T>& other){
         if (this == &other) return *this;
         Stack tmp(other);
